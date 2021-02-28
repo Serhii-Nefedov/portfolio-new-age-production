@@ -1,14 +1,14 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 20px;
-  background-color: #210a27;
+  background-color: #000000;
   text-align: center;
 }
 
 .footer__flex-box {
   @media screen and (min-width: 768px) {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
   }
 
@@ -35,10 +35,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
   padding-top: 0;
   padding-bottom: 0;
 
-  color: $subtitle-color;
+  color: #ffffff;
 
   font-weight: 500;
   font-size: 18px;
@@ -64,6 +65,42 @@
   margin-right: 10px;
   width: 10px;
   height: 16px;
+  fill: currentColor;
+}
+
+.footer__mail-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  color: #ffffff;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  text-align: center;
+  @extend %text-decor-none;
+
+  @include transition(color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+.contacts__mail-icon {
+  display: block;
+  margin-right: 10px;
+  width: 15px;
+  height: 21px;
   fill: currentColor;
 }
 
@@ -214,5 +251,5 @@
   letter-spacing: 0.02em;
   text-align: center;
 
-  color: $subtitle-color;
+  color: #ffffff;
 }

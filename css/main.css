@@ -25,7 +25,7 @@ body, .social-box__list {
   padding: 0;
 }
 
-.footer__contacts-link, .social-box__link {
+.footer__contacts-link, .footer__mail-link, .social-box__link {
   text-decoration: none;
 }
 
@@ -101,18 +101,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-@media screen and (max-width: 767px) {
-  body {
-    padding-top: 59px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  body {
-    padding-top: 79px;
-  }
-}
-
 .page-header {
   background-color: #000000;
   border-bottom: 1px solid #ececec;
@@ -135,7 +123,7 @@ body {
 .footer {
   padding-top: 60px;
   padding-bottom: 20px;
-  background-color: #210a27;
+  background-color: #000000;
   text-align: center;
 }
 
@@ -144,9 +132,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -186,9 +174,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 20px;
   padding-top: 0;
   padding-bottom: 0;
-  color: #757575;
+  color: #ffffff;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.16;
@@ -214,6 +203,47 @@ body {
   margin-right: 10px;
   width: 10px;
   height: 16px;
+  fill: currentColor;
+}
+
+.footer__mail-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  text-align: center;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__mail-link:hover, .footer__mail-link:focus {
+  color: #ad4dad;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__mail-link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+.contacts__mail-icon {
+  display: block;
+  margin-right: 10px;
+  width: 15px;
+  height: 21px;
   fill: currentColor;
 }
 
@@ -360,13 +390,13 @@ body {
   line-height: 1.16;
   letter-spacing: 0.02em;
   text-align: center;
-  color: #757575;
+  color: #ffffff;
 }
 
 /*Lessons*/
 .portfolio {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .portfolio__title {
