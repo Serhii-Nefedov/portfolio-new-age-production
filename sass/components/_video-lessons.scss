@@ -1,0 +1,103 @@
+
+/*Lessons*/
+
+.portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.portfolio__title {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  margin: 0 0 30px 0;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
+.portfolio__subtitle {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 6px;
+
+  font-weight: bold;
+  font-size: px;
+  line-height: 1.14;
+  text-align: center;
+
+  color: #000000;
+}
+
+.lessons__flex-box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.lessons__box {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (max-width: 479px) {
+    max-width: 320px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 400px;
+  }
+
+  @media screen and (min-width: 768px) {
+     margin-left: 0;
+    margin-right: 0;
+    width: 320px;
+    &:nth-child(1){
+      margin-right: 40px;
+    }
+    &:nth-child(3) {
+      margin-right: 40px;
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+   width: 400px;
+    }
+
+  background-color: $team-background-color;
+
+  box-shadow: 0px 1px 3px rgba(68, 55, 55, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.lessons__video {
+  @media screen and (max-width: 479px) {
+    height: 180px;
+  }
+
+  @media screen and (min-width: 480px) {
+    height: 280px;
+  }
+}
+
+.portfolio__video-subtitle {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-bottom: 6px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.14;
+
+  color: #000000;
+}
